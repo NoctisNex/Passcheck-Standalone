@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.container {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    width: 100%;
+    max-width: 400px;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 30px;
+    font-size: 24px;
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: #555;
+    font-weight: 500;
+}
+
+input[type="password"] {
+    width: 100%;
+    padding: 12px 16px;
+    border: 2px solid #e1e5e9;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+}
+
+input[type="password"]:focus {
+    outline: none;
+    border-color: #667eea;
+}
+
+.strength-meter {
+    margin-top: 15px;
+}
+
+.strength-bar {
+    height: 8px;
+    background: #e1e5e9;
+    border-radius: 4px;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+.strength-fill {
+    height: 100%;
+    width: 0%;
+    transition: all 0.3s ease;
+    border-radius: 4px;
+}
+
+.strength-text {
+    font-size: 14px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.requirements {
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.requirement {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+    color: #666;
+}
+
+.requirement.met {
+    color: #28a745;
+}
+
+.requirement-icon {
+    margin-right: 8px;
+    font-weight: bold;
+}
+
+.score {
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 15px;
+}
+
+/* Strength levels */
+.very-weak { background: #dc3545; }
+.weak { background: #fd7e14; }
+.fair { background: #ffc107; }
+.good { background: #20c997; }
+.strong { background: #28a745; }
+
+/* Responsive design */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+    
+    .container {
+        padding: 20px;
+        max-width: 100%;
+    }
+    
+    h1 {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+    
+    input[type="password"] {
+        font-size: 16px; /* Prevents zoom on iOS */
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 15px;
+    }
+    
+    h1 {
+        font-size: 18px;
+    }
+    
+    .requirements {
+        font-size: 13px;
+    }
+}
