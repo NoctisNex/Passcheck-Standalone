@@ -99,15 +99,6 @@ if (password.length >= 10) {
 - ✅ Edge 79+
 - ✅ Mobile browsers (iOS Safari, Chrome Mobile)
 
-## 🤝 Contributing
-
-Contributions are welcome! Here are some ways you can help:
-
-1. **Report bugs** - Found an issue? Open a GitHub issue
-2. **Suggest features** - Have an idea? Let us know!
-3. **Submit pull requests** - Fix bugs or add features
-4. **Improve documentation** - Help others understand the project
-
 ## 📄 License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
