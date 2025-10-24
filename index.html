@@ -137,6 +137,12 @@
                 strengthFill.className = 'strength-fill';
                 strengthText.textContent = 'Enter a password';
                 score.textContent = '';
+                
+                // Reset all requirements to unchecked state
+                Object.values(requirements).forEach(req => {
+                    req.classList.remove('met');
+                    req.querySelector('.requirement-icon').textContent = '❌';
+                });
                 return;
             }
 
